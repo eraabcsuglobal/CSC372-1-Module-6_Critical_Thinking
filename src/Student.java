@@ -11,10 +11,12 @@ public class Student {
 		this.address = address;
 	}
 	
+	// returns the roll number of the student object
 	public int getRollNo() {
 		return rollNo;
 	}
 	
+	// return the name of the student object
 	public String getName() {
 		return name;
 	}

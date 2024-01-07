@@ -4,15 +4,15 @@ public class SortMain {
 
 	public static void main(String[] args) {
 	
-		// create student objects
-		// add them to list
+		// create ArrayList of students
 		ArrayList<Student> students = new ArrayList<>();
 		
-		students.add(new Student(5, "Jack", "32 Albert St"));
-		students.add(new Student(4, "Alice", "19 Hazzard St"));
-		students.add(new Student(1, "Brad", "22 Huntingdon St"));
-		students.add(new Student(2, "Sara", "67 Frankford Ave"));
-		students.add(new Student(3, "Kyle", "222 Belgrade St"));
+		// add student objects and their parameters to the students arraylist
+		students.add(new Student(4256, "Jack", "32 Albert St"));
+		students.add(new Student(3255, "Alice", "19 Hazzard St"));
+		students.add(new Student(8991, "Brad", "22 Huntingdon St"));
+		students.add(new Student(1255, "Sara", "67 Frankford Ave"));
+		students.add(new Student(6678, "Kyle", "222 Belgrade St"));
 		
 		System.out.print("UNSORTED names: ");
 		for (int i = 0; i < students.size(); ++i) {
@@ -26,7 +26,7 @@ public class SortMain {
 		}
 		System.out.println();
 		
-		// sort by name
+		// sort students list by student name
 		SortByName.sortNames(students);
 		
 		System.out.print("SORTED by name: ");
@@ -35,11 +35,11 @@ public class SortMain {
 		}
 		System.out.println();
 	
-		// sort by roll number
+		// sort students list by student roll number
 		SortByRollNo.sortRollNumbers(students);
 		
 		System.out.print("SORTED by roll number: ");
-			for (int i = 0; i < students.size(); ++i) {
+		for (int i = 0; i < students.size(); ++i) {
 			System.out.print(students.get(i).getRollNo() + " ");
 		}
 
